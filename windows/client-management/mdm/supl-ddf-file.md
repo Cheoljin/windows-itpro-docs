@@ -45,7 +45,7 @@ The XML below is for Windows 10, version 1809.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.1/MDM/SUPL</MIME>
+            <MIME>com.microsoft/1.2/MDM/SUPL</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -160,6 +160,29 @@ The XML below is for Windows 10, version 1809.
                   <Description>Optional. Determines the version of the SUPL protocol to use. For SUPL 1.0, set this value to 1. For SUPL 2.0, set this value to 2. The default is 1.</Description>
                   <DFFormat>
                     <int />
+                  </DFFormat>
+                  <Occurrence>
+                    <One />
+                  </Occurrence>
+                  <Scope>
+                    <Permanent />
+                  </Scope>
+                  <DFType>
+                    <MIME>text/plain</MIME>
+                  </DFType>
+                </DFProperties>
+              </Node>
+              <Node>
+                <NodeName>FullVersion</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                    <Replace />
+                  </AccessType>
+                  <DefaultValue>1.0.0</DefaultValue>
+                  <Description>Optional. Determines the full version (major version, minor version, service indicator) of the SUPL protocol to use. The default is 1.0.0</Description>
+                  <DFFormat>
+                    <chr />
                   </DFFormat>
                   <Occurrence>
                     <One />
