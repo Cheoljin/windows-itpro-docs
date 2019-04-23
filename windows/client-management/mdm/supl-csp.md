@@ -86,6 +86,9 @@ For OMA DM, if the format for this node is incorrect the entry will be ignored a
 <a href="" id="version"></a>**Version**  
 Optional. Determines the version of the SUPL protocol to use. For SUPL 1.0, set this value to `1`. For SUPL 2.0, set this value to `2`. The default is 1.
 
+<a href="" id="fullversion"></a>**FullVersion**  
+Optional. Determines the full version of the SUPL protocol to use. Set the value to string type, for example, 2.0.4 where 2, 0, and 4 are major version, minor version and service indicator, respectively. If this FullVersion field is defined, Version field is ignored. If this field is not defined, Version field is used if it is in place.
+
 <a href="" id="mccmncpairs"></a>**MCCMNCPairs**  
 Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network do not match, the device uses the default location service and does not use SUPL.
 
